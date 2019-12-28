@@ -11,6 +11,9 @@ Directadmin-1.595-Nulled For Centos 7 64bit
 
 [root@sucuri ~]# ./setup.sh
 
+Client ID (uid):  9192
+License ID (lid): 919233
+
 [root@sucuri ~]# firewall-cmd --zone=public --add-port=2222/tcp --permanent
 
 [root@sucuri ~]# firewall-cmd --zone=public --add-port=21/tcp --permanent
