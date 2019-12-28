@@ -38,7 +38,7 @@ License ID (lid): 919233
 
 [root@sucuri ~]# chown diradmin:diradmin /usr/local/directadmin/conf/license.key
 
-[root@sucuri ~]# ifconfig eth0:100 37.97.247.189 netmask 255.0.0.0 up
+[root@sucuri ~]# ifconfig eth0:92 37.97.247.189 netmask 255.0.0.0 up
 
 [root@sucuri ~]# echo 'DEVICE=eth0:92' >> /etc/sysconfig/network-scripts/ifcfg-eth0:92
 
