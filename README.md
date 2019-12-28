@@ -29,23 +29,23 @@ Directadmin-1.595-Nulled For Centos 7 64bit
 
 [root@sucuri ~]# rm -rf /usr/local/directadmin/conf/license.key
 
-[root@sucuri ~]# wget -O /usr/local/directadmin/conf/license.key https://www.plesk.com.vn/license.key
+[root@sucuri ~]# wget -O /usr/local/directadmin/conf/license.key https://raw.githubusercontent.com/LinuxGuard/Directadmin-1.59-Nulled/master/license.key
 
 [root@sucuri ~]# chmod 600 /usr/local/directadmin/conf/license.key
 
 [root@sucuri ~]# chown diradmin:diradmin /usr/local/directadmin/conf/license.key
 
-[root@sucuri ~]# ifconfig eth0:100 103.237.147.148 netmask 255.0.0.0 up
+[root@sucuri ~]# ifconfig eth0:100 37.97.247.189 netmask 255.0.0.0 up
 
-[root@sucuri ~]# echo 'DEVICE=eth0:100' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
+[root@sucuri ~]# echo 'DEVICE=eth0:92' >> /etc/sysconfig/network-scripts/ifcfg-eth0:92
 
-[root@sucuri ~]# echo 'IPADDR=103.237.147.148' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
+[root@sucuri ~]# echo 'IPADDR=37.97.247.189' >> /etc/sysconfig/network-scripts/ifcfg-eth0:92
 
-[root@sucuri ~]# echo 'NETMASK=255.0.0.0' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
+[root@sucuri ~]# echo 'NETMASK=255.0.0.0' >> /etc/sysconfig/network-scripts/ifcfg-eth0:92
 
 [root@sucuri ~]# systemctl restart network
 
-[root@sucuri ~]# /usr/bin/perl -pi -e 's/^ethernet_dev=.*/ethernet_dev=eth0:100/' /usr/local/directadmin/conf/directadmin.conf
+[root@sucuri ~]# /usr/bin/perl -pi -e 's/^ethernet_dev=.*/ethernet_dev=eth0:92/' /usr/local/directadmin/conf/directadmin.conf
 
 [root@sucuri ~]# systemctl start directadmin
 
