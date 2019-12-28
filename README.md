@@ -3,50 +3,50 @@ Directadmin 1.595 Nulled
 
 Directadmin-1.595-Nulled For Centos 7 64bit
 
-# yum -y install nano wget perl
+[root@sucuri ~]# yum -y install nano wget perl
 
-# wget https://raw.githubusercontent.com/lehieuit/Directadmin-1.53-nulled/master/setup.sh
+[root@sucuri ~]# wget https://raw.githubusercontent.com/LinuxGuard/Directadmin-1.59-Nulled/master/setup.sh
 
-# chmod +x setup.sh
+[root@sucuri ~]# chmod +x setup.sh
 
-# ./setup.sh
+[root@sucuri ~]# ./setup.sh
 
-# firewall-cmd --zone=public --add-port=2222/tcp --permanent
+[root@sucuri ~]# firewall-cmd --zone=public --add-port=2222/tcp --permanent
 
-# firewall-cmd --zone=public --add-port=21/tcp --permanent
+[root@sucuri ~]# firewall-cmd --zone=public --add-port=21/tcp --permanent
 
-# firewall-cmd --zone=public --add-port=80/tcp --permanent
+[root@sucuri ~]# firewall-cmd --zone=public --add-port=80/tcp --permanent
 
-# firewall-cmd --zone=public --add-port=25/tcp --permanent
+[root@sucuri ~]# firewall-cmd --zone=public --add-port=25/tcp --permanent
 
-# firewall-cmd --reload
+[root@sucuri ~]# firewall-cmd --reload
 
-# systemctl restart directadmin
+[root@sucuri ~]# systemctl restart directadmin
 
-# cd /usr/local/directadmin/conf/
+[root@sucuri ~]# cd /usr/local/directadmin/conf/
 
-# systemctl stop directadmin
+[root@sucuri ~]# systemctl stop directadmin
 
-# rm -rf /usr/local/directadmin/conf/license.key
+[root@sucuri ~]# rm -rf /usr/local/directadmin/conf/license.key
 
-# wget -O /usr/local/directadmin/conf/license.key https://www.plesk.com.vn/license.key
+[root@sucuri ~]# wget -O /usr/local/directadmin/conf/license.key https://www.plesk.com.vn/license.key
 
-# chmod 600 /usr/local/directadmin/conf/license.key
+[root@sucuri ~]# chmod 600 /usr/local/directadmin/conf/license.key
 
-# chown diradmin:diradmin /usr/local/directadmin/conf/license.key
+[root@sucuri ~]# chown diradmin:diradmin /usr/local/directadmin/conf/license.key
 
-# ifconfig eth0:100 103.237.147.148 netmask 255.0.0.0 up
+[root@sucuri ~]# ifconfig eth0:100 103.237.147.148 netmask 255.0.0.0 up
 
-# echo 'DEVICE=eth0:100' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
+[root@sucuri ~]# echo 'DEVICE=eth0:100' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
 
-# echo 'IPADDR=103.237.147.148' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
+[root@sucuri ~]# echo 'IPADDR=103.237.147.148' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
 
-# echo 'NETMASK=255.0.0.0' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
+[root@sucuri ~]# echo 'NETMASK=255.0.0.0' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
 
-# systemctl restart network
+[root@sucuri ~]# systemctl restart network
 
-# /usr/bin/perl -pi -e 's/^ethernet_dev=.*/ethernet_dev=eth0:100/' /usr/local/directadmin/conf/directadmin.conf
+[root@sucuri ~]# /usr/bin/perl -pi -e 's/^ethernet_dev=.*/ethernet_dev=eth0:100/' /usr/local/directadmin/conf/directadmin.conf
 
-# systemctl start directadmin
+[root@sucuri ~]# systemctl start directadmin
 
 Done:)
